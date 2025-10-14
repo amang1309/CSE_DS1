@@ -154,5 +154,54 @@ H<sub>2</sub>O<br>
  <form action="/action.php"> </form>
  <input type="text" placeholder="Login">
 
+ <hr> 
+<h2> Intro to Forms </h2>
+<form> 
+<center> 
+        <h3> Login</h3>
+    <label for="login"> Username </label> <br>
+    <input type="text" id="login" name="login" value="Name"></input><br>
+    <label for="xyz"> Password </label><br>
+    <input type="password" id="xyz" name="xyz" value="Password"> </input> <br> 
+     <input type="button" id="button" value="submit"> </input>
+</center>
+ <h4> Select tag </h4>
+    <label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+<h4> Text Area</h4>
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+<h4> Buttons</h4>
+<button type="button" onclick="alert('Hello World!')">Click Here!</button>
+
+<h3> Radio Button </h3>
+<p>Choose your Favourite Day</p>
+
+
+  <input type="radio" id="Monday" name="fav_language" value="Monday">
+  <label for="Monday">Monday</label><br>
+  <input type="radio" id="Tuesday" name="fav_language" value="Tuesday">
+  <label for="Tuesday">Tuesday</label><br>
+  <input type="radio" id="Wednesday" name="fav_language" value="Wednesday">
+  <label for="Wednesday">Wednesday</label><br> 
+  <input type="radio" id="Thursday" name="fav_language" value="Thursday">
+  <label for="Thursday">Thursday</label><br> 
+  <input type="radio" id="Friday" name="fav_language" value="Friday">
+  <label for="Friday">Friday</label><br> 
+  <input type="radio" id="Saturday" name="fav_language" value="Saturday">
+  <label for="Saturday">Saturday</label><br> 
+  <input type="radio" id="Sunday" name="fav_language" value="Sunday">
+  <label for="Sunday">Sunday</label>
+
+
+    
+</form>
+
 </body>
 </html>
