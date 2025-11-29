@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Product Grid</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background: #f5f5f5;
+padding: 20px;
+}
+h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+/* Product grid */
+.grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+gap: 20px;
+}
+
+.card {
+background: #fff;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+padding: 16px;
+text-align: center;
+}
+.card img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 6px;
+margin-bottom: 10px;
+}
+.card h3 {
+font-size: 18px;
+margin: 8px 0;
+}
+.card p {
+font-size: 14px;
+color: #555;
+margin: 4px 0;
+}
+.price {
+font-weight: bold;
+color: #007bff;
+}
+
+@media (max-width: 1024px) {
+.grid {
+grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+}
+}
+@media (max-width: 600px) {
+.grid {
+grid-template-columns: 1fr; /* 1 column for mobile */
+}
+}
+</style>
+</head>
+<body>
+<h2>Responsive Product Grid</h2>
+<div class="grid">
+<div class="card">
+<img src="https://via.placeholder.com/200x150" alt="Product 1">
+<h3>Perfume</h3>
+<p>High-quality perfume with great perfume.</p>
+<p class="price">₹499</p>
+</div>
+<div class="card">
+<img src="https://via.placeholder.com/200x150" alt="Product 2">
+<h3>Football</h3>
+<p>Durable and strong knitting. High and attractive contrast colours.</p>
+<p class="price">₹799</p>
+</div>
+<div class="card">
+<img src="https://via.placeholder.com/200x150" alt="Product 3">
+<h3>table lamp</h3>
+<p>Battery powered table lamp. can run upto to 6 hours to light up your room at night </p>
+<p class="price">₹500</p>
+</div>
+<div class="card">
+<img src="https://via.placeholder.com/200x150" alt="Product 4">
+<h3>Keyboard</h3>
+<p>Highly durable keyboard with flexible keys to withstand time pressure.</p>
+<p class="price">₹399</p>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid introduction</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        height:100vh;
+        width:100vh;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        padding: 10px;
+        background-color:antiquewhite;
+    }
+    .item {
+        background-color: #b7f1b9;
+        color: white;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        border:2px solid black;
+    }
+    .item1 {
+        grid-column: 1/7;
+        background-color: #99e29b;
+    }
+    .item2 {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        background-color: #a6f5a6;
+    }
+
+    </style>
+<body>
+    <h1 >Grid intro</h1>
+    <div class ="container">
+        <div class="item item1">header</div>
+        <div class="item item2">Side Menu</div>
+        <div class="item item3">Content</div>
+        <div class="item item4">about</div>
+        <div class="item item5">info</div>
+        <div class="item item6">Footer</div>
+    </div>
+    
+    
+</body>
+</html>
