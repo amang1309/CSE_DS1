@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>University Course Schedule</title>
+</head>
+<body>
+
+  <h1>University Course Schedule</h1>
+  <p>This page demonstrates tables with <b>rowspan</b>, <b>colspan</b>, <b>headers</b>, <b>captions</b>, and <b>nested tables</b>.</p>
+
+  <!-- Main Table -->
+  <table border="1" cellpadding="8" cellspacing="0">
+    <caption><b>Semester Timetable</b></caption>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>9:00 - 10:00</th>
+        <th>10:00 - 11:00</th>
+        <th>11:00 - 12:00</th>
+        <th>12:00 - 1:00</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Monday</td>
+        <td>Math</td>
+        <td>Physics</td>
+        <td>Computer Science</td>
+        <td rowspan="5">Lunch Break</td>
+      </tr>
+      <tr>
+        <td colspan="2">Chemistry Lab</td>
+        <td>English</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>Biology</td>
+        <td>Math</td>
+        <td>History</td>
+        <!-- Lunch already covered by rowspan -->
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td colspan="3">
+          <!-- Nested Table -->
+          <table border="1" cellpadding="4" cellspacing="0">
+            <caption>Special Workshop</caption>
+            <tr>
+              <th>Topic</th>
+              <th>Instructor</th>
+            </tr>
+            <tr>
+              <td>AI Basics</td>
+              <td>Dr. Sharma</td>
+            </tr>
+            <tr>
+              <td>Robotics</td>
+              <td>Prof. Mehta</td>
+            </tr>
+          </table>
+        </td>
+        <!-- Lunch already covered by rowspan -->
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>Economics</td>
+        <td>Philosophy</td>
+        <td>Sports</td>
+        <!-- Lunch already covered by rowspan -->
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Notes</h2>
+  <ul>
+    <li><b>Rowspan</b>: Lunch break spans 5 rows.</li>
+    <li><b>Colspan</b>: Chemistry Lab spans 2 columns.</li>
+    <li><b>Headers</b>: Table headers define time slots.</li>
+    <li><b>Caption</b>: “Semester Timetable” is the main caption.</li>
+    <li><b>Nested Table</b>: Wednesday has a workshop table inside.</li>
+  </ul>
+
+</body>
+</html>
