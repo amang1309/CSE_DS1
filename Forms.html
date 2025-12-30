@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Application Form</title>
+</head>
+<body>
+  <h1>Job Application</h1>
+  <p>Please fill out the form below. Fields marked with * are required.</p>
+
+  <form action="/submit" method="post" enctype="multipart/form-data">
+    <label for="fullName">Full name *</label><br>
+    <input type="text" id="fullName" name="fullName" required><br><br>
+
+    <label for="email">Email *</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone number *</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="location">Current city</label><br>
+    <input type="text" id="location" name="location"><br><br>
+
+    <label for="position">Position applying for *</label><br>
+    <select id="position" name="position" required>
+      <option value="" disabled selected>Select a role</option>
+      <option value="frontend">Frontend Developer</option>
+      <option value="backend">Backend Developer</option>
+      <option value="fullstack">Full-Stack Engineer</option>
+      <option value="designer">UI/UX Designer</option>
+      <option value="pm">Product Manager</option>
+    </select><br><br>
+
+    <label for="resume">Resume (PDF or DOCX) *</label><br>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+
+    <label for="portfolio">Portfolio or GitHub (optional)</label><br>
+    <input type="text" id="portfolio" name="portfolio"><br><br>
+
+    <label for="coverLetter">Cover letter *</label><br>
+    <textarea id="coverLetter" name="coverLetter" required></textarea><br><br>
+
+    <label for="availability">Earliest start date *</label><br>
+    <input type="date" id="availability" name="availability" required><br><br>
+
+    <label>
+      <input type="checkbox" id="consent" name="consent" required>
+      I confirm the information provided is accurate *
+    </label><br><br>
+
+    <button type="submit">Submit application</button>
+    <button type="reset">Reset form</button>
+  </form>
+</body>
+</html>
